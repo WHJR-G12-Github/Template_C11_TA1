@@ -26,7 +26,7 @@ def moveup():
     speed=speed-10
 # Move till the previous line
 
-# Inside the 'Bird' class, define a function to display the bird image over 'bird' rectangle
+# Inside the 'Bird' class, define a method to display the bird image over 'bird' rectangle
 
 while True:  
   screen.blit(images["bg"],[0,0])
@@ -34,11 +34,11 @@ while True:
   if groundx<-550:
       groundx=0
   screen.blit(images["ground"],[groundx,550])
-  # Call the 'movedown()' function using the object 'bird1' 
+  # Call the 'movedown()' method using the object 'bird1' 
   
-  # Call the 'display()' function using the object 'bird1'
+  # Call the 'display()' method using the object 'bird1'
   
-  # The following line is commented as it is included inside the 'display()' function defined inside the 'Bird' class
+  # The following line is commented as it is included inside the 'display()' method defined inside the 'Bird' class
   # screen.blit(images["bird"],bird)
   
   for event in pygame.event.get():
@@ -48,7 +48,7 @@ while True:
     
     if event.type==pygame.KEYDOWN:
         if event.key==pygame.K_SPACE:
-            # Call the 'moveup()' function using the object 'bird1' 
+            # Call the 'moveup()' method using the object 'bird1' 
             
   
   pygame.display.update()
